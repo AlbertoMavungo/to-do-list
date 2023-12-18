@@ -1,0 +1,74 @@
+.containerList {
+    margin-top: 3%;
+    margin-left: 12%;
+    background-color: #343541;
+}
+
+.notConcluded {
+    color: #dddddd
+}
+
+.concluded {
+    color: #19c37d;
+}
+
+.table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 86%;
+    border-color: #9b59b6;
+}
+
+.taskTitle {
+    grid-area: taskTitle;
+}
+
+.taskContent {
+    grid-area: taskContent;
+}
+
+.taskActions{
+    overflow-wrap: break-word;
+    grid-area: taskActions;
+}
+
+.tableHeaderItems {
+    display: grid;
+    height: 40px;
+    grid: "taskTitle taskContent taskActions" /20% 72% auto ;
+}
+
+.tableHeaderItem {
+    border: 0.5px solid #dddddd;
+    color:#dddddd;
+    padding:10px 0px 10px 0px;
+}
+
+.listTitle {
+    text-align: center;
+    grid-area: listTitle;  
+}
+
+.listContent {
+    grid-area: listContent;
+    padding-left: 10px;
+}
+
+.listActions{
+    grid-area:listActions ;
+}
+
+.tableLists{
+    display: grid;
+    height: 35px;
+    grid: "listTitle listContent listActions" /20% 72% auto;
+    align-items: center;
+}
+
+.tableList{
+    flex-direction: row;
+    padding-left:8px;
+    border: 0.5px solid;
+    overflow-wrap: break-word;
+    padding:7.5px 10px;
+}
